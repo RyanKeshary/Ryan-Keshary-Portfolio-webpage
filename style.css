@@ -1,0 +1,186 @@
+/* google font 1 */
+.bubblegum-sans-regular {
+  font-family: "Bubblegum Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white !important;
+}
+
+/* google font 2 */
+.m-plus-rounded-1c-regular {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white !important;
+}
+
+/* animation */
+/* From Uiverse.io by alexruix */ 
+.loader {
+  position: relative;
+  width: 120px;
+  height: 90px;
+  margin: 0 auto;
+}
+
+.loader:before {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #2a9d8f;
+  animation: loading-bounce 0.5s ease-in-out infinite alternate;
+}
+
+.loader:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 7px;
+  width: 45px;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #f2f2f2, -35px 50px 0 #f2f2f2, -70px 95px 0 #f2f2f2;
+  animation: loading-step 1s ease-in-out infinite;
+}
+
+@keyframes loading-bounce {
+  0% {
+    transform: scale(1, 0.7);
+  }
+
+  40% {
+    transform: scale(0.8, 1.2);
+  }
+
+  60% {
+    transform: scale(1, 1);
+  }
+
+  100% {
+    bottom: 140px;
+  }
+}
+
+@keyframes loading-step {
+  0% {
+    box-shadow: 0 10px 0 rgba(0, 0, 0, 0),
+            0 10px 0 #f2f2f2,
+            -35px 50px 0 #f2f2f2,
+            -70px 90px 0 #f2f2f2;
+  }
+
+  100% {
+    box-shadow: 0 10px 0 #f2f2f2,
+            -35px 50px 0 #f2f2f2,
+            -70px 90px 0 #f2f2f2,
+            -70px 90px 0 rgba(0, 0, 0, 0);
+  }
+}
+
+/* typing animation */
+.h-box {
+  display: inline-block;
+}
+
+.text {
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation :
+  typing 2s steps(14),
+  cursor .4s step-end infinite alternate;
+}
+
+/* cursor blinking */
+@keyframes cursor {
+  50% { border-color: transparent }
+}
+
+/* typing effect */
+@keyframes typing {
+  from { width: 0}
+}
+
+/* ====================================================================================================== */
+
+.background {
+    background-color: #453BD9;
+}
+
+.lit-abt {
+  margin-top: 15rem;
+}
+
+.hotbar {
+  font-size: larger;
+}
+
+main {
+  margin-top: 25rem;
+}
+
+.sec {
+  margin-bottom: 10rem;
+}
+
+#foot-one {
+  margin-bottom: 0;
+}
+
+.foot {
+  color: #3BB4F5 !important;
+  text-align: center;
+  margin: 2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ========================================================================================================== */
+
+@media (max-width:431px) {  
+
+  .lit-abt {
+  margin-top: 5rem;
+}
+
+  main {
+    margin-top: 7rem;
+  }
+
+  .sec {
+  margin-bottom: 3rem;
+}
+  .foot {
+    margin: 1rem;
+  }
+
+  .ryan-speech-1 {
+    display: none !important;
+  }
+
+  .left-bar {
+    display: none;
+  }
+}
+
+@media (min-width:432px) and (max-width:598px) {
+
+    .ryan-speech-1 {
+    display: none !important;
+  }
+
+}
+
+@media (min-width:599px) and (max-width: 991px) {
+.ryan-speech-1 {
+  width: 200px;
+  height: auto;
+}
+}
