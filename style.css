@@ -75,7 +75,7 @@ html {
 }
 
 body {
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: "Lato", sans-serif;
   background: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.6;
@@ -92,7 +92,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Bubblegum Sans", cursive;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.2;
 }
 
@@ -519,10 +519,12 @@ section {
 }
 
 .tech-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: var(--space-lg);
-  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
 }
 
 .tech-item {
@@ -533,7 +535,7 @@ section {
   transition: all var(--transition-base);
   cursor: pointer;
   position: relative;
-  width: 100%;
+  width: 150px;
   max-width: 150px;
   display: flex;
   flex-direction: column;
@@ -575,6 +577,13 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.tech-icon img {
+  width: 100%;
+  max-width: 56px;
+  height: 56px;
+  object-fit: contain;
 }
 
 .tech-name {
@@ -668,7 +677,7 @@ section {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 0.9rem;
 }
 
@@ -827,7 +836,7 @@ section {
   border-radius: var(--radius-full);
   cursor: pointer;
   transition: all var(--transition-base);
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 600;
   font-size: 0.95rem;
   min-width: 44px;
