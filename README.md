@@ -56,7 +56,7 @@ It featured multilingual support, live map integration, and offline accessibilit
 
 ## 📸 Preview
 
-<img width="2534" height="1439" alt="Image" src="https://github.com/user-attachments/assets/d018186f-9710-4201-864d-d5e119cc39fe" />
+<img width="2532" height="1439" alt="Image" src="https://github.com/user-attachments/assets/826cab33-58ed-4f59-89c0-304706b5c6a5" />
 
 
 ## 🌱 Future Improvements
