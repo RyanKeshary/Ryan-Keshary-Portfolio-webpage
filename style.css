@@ -581,8 +581,8 @@ section {
 
 .tech-icon img {
   width: 100%;
-  max-width: 56px;
-  height: 56px;
+  max-width: 70px;
+  height: 70px;
   object-fit: contain;
 }
 
@@ -592,6 +592,7 @@ section {
   font-size: clamp(0.9rem, 0.85rem + 0.25vw, 1.1rem);
   text-align: center;
 }
+
 
 /* ===========================
    ACHIEVEMENTS SECTION
@@ -1065,6 +1066,10 @@ section {
   box-shadow: 0 5px 15px var(--shadow);
 }
 
+.social-link:hover {
+  transform: translateY(-3px) scale(1.1);
+}
+
 .social-link.linkedin:hover {
   background: #0077b5;
   color: white;
@@ -1086,11 +1091,76 @@ section {
   box-shadow: 0 10px 25px rgba(234, 67, 53, 0.4);
 }
 
-.social-link.twitter:hover {
+.social-link.x:hover {
   background: #000;
-  color: white;
-  transform: translateY(-5px) scale(1.1);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.social-link.behance:hover {
+  background: #1769ff;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(23, 105, 255, 0.45);
+}
+
+/* Light mode (default) */
+.social-link.medium:hover {
+  background: #000;
+  color: #fff;
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(255, 255, 255, 0.15) inset;
+}
+
+/* Dark mode – inverted palette */
+[data-theme="dark"] .social-link.medium:hover {
+  background: #fff;
+  color: #000;
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(0, 0, 0, 0.15) inset;
+}
+
+/* Light mode (default) */
+.social-link.dailydev:hover {
+  background: radial-gradient(
+    circle at top,
+    rgba(150, 107, 224, 0.763),
+    rgba(72, 22, 178, 0.507) 70%
+  );
+  color: #ffffff;
+  box-shadow:
+    0 0 12px rgba(183, 148, 244, 0.35),
+    0 0 24px rgba(128, 90, 213, 0.25),
+    0 12px 30px rgba(0, 0, 0, 0.65);
+}
+
+/* Dark mode – inverted palette */
+[data-theme="dark"] .social-link.dailydev:hover {
+  background: #ffffff;
+  color: #3b2667;
+  box-shadow:
+    0 10px 25px rgba(59, 38, 103, 0.25),
+    0 0 0 1px rgba(59, 38, 103, 0.15) inset;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.6rem;
+  transition: transform var(--transition-base);
+}
+
+.social-link svg {
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.social-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  display: block;
 }
 
 .footer-nav {
@@ -1116,6 +1186,13 @@ section {
   color: var(--text-secondary);
   font-size: 0.95rem;
 }
+
+.social-link.dailydev svg {
+  height: 50px;
+  width: auto;
+}
+
+
 
 /* ===========================
    ANIMATIONS
